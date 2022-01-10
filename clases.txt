@@ -1,0 +1,6 @@
+mt- = margin-top
+mb- = margin-bottom
+ml- = margin-left
+mr- = margin-right
+my- = it sets margin-left and margin-right at the same time on y axes
+mX- = it sets margin-bottom and margin-top at the same time on X axes

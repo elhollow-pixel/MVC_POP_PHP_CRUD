@@ -1,0 +1,19 @@
+<?php
+    class conexion{
+       private static $instancia=NULL;
+    
+
+       //self ->llamaar funciones
+        public static function  crearInstancia(){
+            if(!isset(self::$instancia)){
+                $opcionesPDO[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+                self::$instancia = new PDO('mysql:host=localhost; dbname=empleados','root','', $opcionesPDO);
+
+                //echo "conexion realizada";
+            }
+            return self::$instancia;
+        }
+
+    }
+
+?>
